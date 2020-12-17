@@ -24,15 +24,18 @@ def output(main, maxdel, f):
         print('\t', 'Максимальный общий делитель "МОД" -', maxdel)
         print("\033[34m{}".format('Ответ программы: '))
         if f == False:
-            print("\033[31m {}".format('Числа невзаимнопростые'))
             length = 22
+            print("\033[31m {}".format('=' * length))
+            print("\033[31m {}".format('Числа невзаимнопростые'))
         if f == True:
-            print("\033[32m {}".format('Числа взаимнопростые'))
             length = 20
+            print("\033[32m {}".format('=' * length))
+            print("\033[32m {}".format('Числа взаимнопростые'))
     else:
         print("\033[34m{}".format('Ответ программы: '))
+        print("\033[34m {}".format('=' * length))
         print(' Максимальный общий делитель "МОД" -', maxdel)
-    return (" {}" .format('=' * length))
+    return(" {}" .format('=' * length))
 
 
 def gen(a, index):
